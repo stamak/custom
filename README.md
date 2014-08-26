@@ -15,7 +15,7 @@
 
 ## Overview
 
-This module provides custom fact dhcpserver and help to get the dhcp server ip address
+This module provides the custom fact **dhcpserver** and help to get the dhcp server ip address
 from facter
 
 ## Module Description

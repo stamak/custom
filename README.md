@@ -15,19 +15,13 @@
 
 ## Overview
 
-A one-maybe-two sentence summary of what the module does/what problem it solves.
-This is your 30 second elevator pitch for your module. Consider including
-OS/Puppet version it works with.
+This module provides the custom fact **dhcpserver** and help to get the dhcp server ip address
+from facter
 
 ## Module Description
 
-If applicable, this section should have a brief description of the technology
-the module integrates with and what that integration enables. This section
-should answer the questions: "What does this module *do*?" and "Why would I use
-it?"
-
-If your module has a range of functionality (installation, configuration,
-management, etc.) this is the time to mention it.
+Use clear ruby to reads file /var/lib/dhcp/dhclient.eth0.leases and gets the last
+dhcp server ip address, which the host have gotten the lease from
 
 ## Setup
 
@@ -40,8 +34,8 @@ management, etc.) this is the time to mention it.
 
 ### Setup Requirements **OPTIONAL**
 
-If your module requires anything extra before setting up (pluginsync enabled,
-etc.), mention it here.
+pluginsync enabled,
+
 
 ### Beginning with custom
 
@@ -65,7 +59,7 @@ with things. (We are working on automating this section!)
 
 ## Limitations
 
-This is where you list OS compatibility, version compatibility, etc.
+Ubuntu 14.04 with isc-dhcp-client
 
 ## Development
 
